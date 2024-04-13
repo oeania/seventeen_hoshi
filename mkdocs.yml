@@ -1,0 +1,60 @@
+site_name: Seventeen_Hoshi
+nav:
+    - Home:
+      - Home: index.md
+      - News: home/news.md
+    - Instagram:
+      - 24H: instagram/24H.md
+theme:
+  name: material
+  #custom_dir: docs/overrides
+  # font:
+  #   text: Bitter
+  #   code: Roboto Mono
+  logo: assets/img/myavatar-fotor-150.png
+    # material/library
+    # admonition:
+    #   <type>: material/file-alert-outline
+
+  favicon: assets/img/myavatar-fotor-150.png
+
+  palette:
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default # Day mode
+      primary: yellow # Top bar
+      accent: indigo # Highlight color for links and interactive elements
+      # teal
+      toggle:
+        icon: material/toggle-switch # Icon
+        name: Switch to Night Mode # Tooltip on mouse hover
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate # Night mode
+      primary: light grey
+      accent: indigo
+      # teal
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to Day Mode
+  features:
+    - announce.dismiss # Present temporary announcements that can be marked as read by the user, may contain a button to dismiss the current announcement
+    # - navigation.instant
+    #- header.autohide  # Auto hide
+    - navigation.tracking # The URL in the address bar will automatically update to the active anchor highlighted in the directory
+    - navigation.tabs # The top-level sections will be presented in a menu layer beneath the viewport title, but remain unchanged on mobile devices
+    # - navigation.tabs.sticky  # With sticky tabs enabled, navigation tabs will be locked below the title and remain visible when scrolling down
+    - navigation.sections # With sections enabled, top-level sections are presented as groups in the sidebar for viewports wider than 1220px, but remain unchanged on mobile devices
+    - navigation.top # Button to return to the top, appears on upward scroll
+    - navigation.footer # The footer will be presented in the sidebar, but remain unchanged on mobile devices
+    - search.suggest # Suggest completing the entire word as you type in the search input
+    - search.highlight # Highlight keywords in search results
+    - search.share # Search share button
+    - navigation.expand # Expand all contents of the left catalog when opening Tab
+    - navigation.indexes # After enabling section indexes, documents can be directly appended to sections
+    - content.tabs.link
+    - content.tooltips
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+  language: zh # Some prompts will turn into Chinese
